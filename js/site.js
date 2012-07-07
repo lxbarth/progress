@@ -11,7 +11,6 @@ window.onload = function() {
     };
 
     wax.tilejson(url, function(tilejson) {
-        console.log('error', tilejson);
         var m = new MM.Map('map',
         new wax.mm.connector(tilejson));
         m.setCenterZoom(new MM.Location(tilejson.center[1],
