@@ -1,5 +1,6 @@
 window.onload = function() {
-    var url = 'http://a.tiles.mapbox.com/v3/lxbarth.map-vdz0bc13.jsonp';
+    var url = 'http://a.tiles.mapbox.com/v3/' +
+        document.location.hash.substr(1) +'.jsonp';
 
     wax.tilejson(url, function(tilejson) {
         var m = new MM.Map('map',
