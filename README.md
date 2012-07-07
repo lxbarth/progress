@@ -10,8 +10,8 @@ Stick your MapBox maps in a pretty frame.
 
 ![](https://dl.dropbox.com/u/479174/hosting/frame/tiljson.png)
 
-## 3 Go to http://lxbarth.github.com/#[map-id]
+## 3 Go to http://lxbarth.github.com/?[map-id]
 
 Example:
 
-[lxbarth.github.com/frame/#lxbarth.map-v9o1vc83](http://lxbarth.github.com/frame/#lxbarth.map-v9o1vc83)
+[lxbarth.github.com/frame/?lxbarth.map-v9o1vc83](http://lxbarth.github.com/frame/?lxbarth.map-v9o1vc83)
