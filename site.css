@@ -56,13 +56,21 @@ h1 {
   padding: 10px 0;
   font-weight: bold;
   }
+h2 {
+  font-size: 20px;
+  margin: 0 0 20px;
+  }
 
-p {
-  padding: 0 0 10px 0;
+p,
+li {
+  margin: 0 0 10px;
   }
 
 a {
   color: #489;
+  }
+em {
+  font-weight: bold;
   }
 
 /* --------------------------------------------------------
@@ -109,6 +117,17 @@ a {
   width: 126px;
   background: url('sprite.png');
   }
+
+#instructions {
+  padding: 70px;
+  }
+  #instructions .example {
+    color: #555;
+    padding: 15px;
+    }
+    #instructions h2 {
+      margin-bottom: 40px;
+      }
 
 /* --------------------------------------------------------
   Wax, largely taken from theme/controls.css

@@ -13,10 +13,34 @@
   </head>
   <body>
     <div id='header'>
-      <h1 id='title'></h1>
+      <h1 id='title'>No map at this path</h1>
       <div id='description'></div>
     </div>
-    <div id='map' class='fullscreen'></div>
+    <div id='map' class='fullscreen'>
+      <div id='instructions'>
+        <h2>Frame your MapBox map</h2>
+        <ul>
+          <li>
+            1. Click 'Embed' on your map in the MapBox hosting account
+            <div class='example'>
+              The Embed button is the first one on the Info tab of your map.
+            </div>
+          </li>
+          <li>
+            2. Look for the map ID in the TileJSON URL
+            <div class='example'>
+              Example: http://a.tiles.mapbox.com/v3/<em>lxbarth.map-v9o1vc83</em>.jsonp
+            </div>
+          </li>
+          <li>
+            3. Go to http://lxbarth.github.com/#[map-id]
+            <div class='example'>
+              Example: <a href='http://lxbarth.github.com/frame#lxbarth.map-v9o1vc83'>http://lxbarth.github.com/frame#lxbarth.map-v9o1vc83</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div id='attribution'></div>
     <a id='logo' href='http://mapbox.com'></a>
     </div>
