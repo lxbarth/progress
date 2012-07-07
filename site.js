@@ -24,9 +24,15 @@ window.onload = function() {
             .on(wax.tooltip().animate(true).parent(m.parent).events());
         wax.mm.legend(m, tilejson).appendTo(m.parent);
 
+        m.minzoom = 4; // tilejson.minzoom;
+        m.maxzoom = tilejson.maxzoom;
+
         document.getElementById('title').innerHTML = tilejson.name;
         document.getElementById('description').innerHTML = tilejson.description;
         document.getElementById('attribution').innerHTML = tilejson.attribution;
+
+        // Hide instructions and display all dynamic elements.
+        document.getElementById('instructions').style.display = 'none';
         reveal();
     });
 
