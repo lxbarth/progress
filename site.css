@@ -118,6 +118,14 @@ em {
   background: url('sprite.png');
   }
 
+.dynamic {
+  opacity: 0;
+  transition:         opacity 1s;
+  -moz-transition:    opacity 1s;
+  -webkit-transition: opacity 1s;
+  -o-transition:      opacity 1s;
+  }
+
 #instructions {
   padding: 70px;
   }

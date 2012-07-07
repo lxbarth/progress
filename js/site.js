@@ -2,7 +2,16 @@ window.onload = function() {
     var url = 'http://a.tiles.mapbox.com/v3/' +
         document.location.hash.substr(1) +'.jsonp';
 
+    // Display all dynamically populated elements.
+    var reveal = function() {
+        var elements = document.getElementsByClassName('dynamic');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.opacity = 1;
+        }
+    };
+
     wax.tilejson(url, function(tilejson) {
+        console.log('error', tilejson);
         var m = new MM.Map('map',
         new wax.mm.connector(tilejson));
         m.setCenterZoom(new MM.Location(tilejson.center[1],
@@ -19,5 +28,9 @@ window.onload = function() {
         document.getElementById('title').innerHTML = tilejson.name;
         document.getElementById('description').innerHTML = tilejson.description;
         document.getElementById('attribution').innerHTML = tilejson.attribution;
+        reveal();
     });
+
+    // Wax doesn't call us back if there's an error. Cheat.
+    setTimeout(reveal, 750);
 };
