@@ -5,8 +5,8 @@ window.onload = function() {
     wax.tilejson(url, function(tilejson) {
         var m = new MM.Map('map',
         new wax.mm.connector(tilejson));
-        m.setCenterZoom(new MM.Location(tilejson.center[0],
-            tilejson.center[1]),
+        m.setCenterZoom(new MM.Location(tilejson.center[1],
+            tilejson.center[0]),
             tilejson.center[2]);
 
         wax.mm.zoomer(m).appendTo(m.parent);
