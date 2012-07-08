@@ -129,12 +129,19 @@ em {
 #instructions {
   padding: 70px;
   }
+  #instructions h2 {
+    margin-bottom: 40px;
+    }
   #instructions .example {
     color: #555;
     padding: 15px;
     }
-    #instructions h2 {
-      margin-bottom: 40px;
+    #instructions .example em {
+      color: #999;
+      font-weight: normal;
+      }
+    #instructions .example a em {
+      color: #6cadbe;
       }
 
 /* --------------------------------------------------------
