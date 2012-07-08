@@ -1,6 +1,4 @@
-# Frame your MapBox maps
-
-Stick your MapBox maps in a pretty frame.
+# Frame your MapBox map
 
 ## 1 Click 'embed' on your map in the MapBox hosting account
 
