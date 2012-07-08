@@ -24,17 +24,19 @@ window.onload = function() {
                 tilejson.center[0]),
                 tilejson.center[2]);
 
-        // Set up tracking URL in hash.
+        // Set up location tracking in URL.
         new MM.Hash(m);
 
-        // Set up zoomer and interaction.
+        // Set up zoomer and fullscreen.
         wax.mm.zoomer(m).appendTo(m.parent);
+        wax.mm.fullscreen(m, tilejson).appendTo(document.getElementById('map'));
+
+        // Set up interaction and legends.
         wax.mm.interaction()
             .map(m)
             .tilejson(tilejson)
             .on(wax.tooltip().animate(true).parent(m.parent).events());
         wax.mm.legend(m, tilejson).appendTo(m.parent);
-        wax.mm.fullscreen(m, tilejson).appendTo(document.getElementById('map'));
 
         // Populate dynamic fields from tilejson.
         document.getElementById('title').innerHTML = tilejson.name;
