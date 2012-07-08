@@ -3,7 +3,7 @@ window.onload = function() {
     var url = 'http://a.tiles.mapbox.com/v3/' +
         document.location.search.substr(1) +'.jsonp';
 
-    // Display all dynamically populated elements.
+    // Reveal all dynamically populated elements.
     var reveal = function() {
         var elements = document.getElementsByClassName('dynamic');
         for (var i = 0; i < elements.length; i++) {
