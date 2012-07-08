@@ -8,7 +8,7 @@
 
 ![](https://dl.dropbox.com/u/479174/hosting/frame/tiljson.png)
 
-## 3 Go to http://lxbarth.github.com/?[map-id]
+## 3 Go to http://lxbarth.github.com/?[map ID]
 
 Example:
 
