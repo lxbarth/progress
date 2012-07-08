@@ -34,6 +34,7 @@ window.onload = function() {
             .tilejson(tilejson)
             .on(wax.tooltip().animate(true).parent(m.parent).events());
         wax.mm.legend(m, tilejson).appendTo(m.parent);
+        wax.mm.fullscreen(m, tilejson).appendTo(document.getElementById('map'));
 
         // Populate dynamic fields from tilejson.
         document.getElementById('title').innerHTML = tilejson.name;

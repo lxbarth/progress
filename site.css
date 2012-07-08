@@ -143,37 +143,45 @@ em {
 
 a.zoomer,
 .wax-legends,
-.wax-tooltip {
-  color: #222220;
-  background:#f5f5f5;
+.wax-tooltip,
+a.wax-fullscreen {
   box-shadow:         rgba(0,0,0,0.1) 3px 3px 3px;
   -moz-box-shadow:    rgba(0,0,0,0.1) 3px 3px 3px;
   -webkit-box-shadow: rgba(0,0,0,0.1) 3px 3px 3px;
+  }
+.wax-legends,
+.wax-tooltip {
+  color: #222220;
+  background:#f5f5f5;
+  }
+a.zoomer,
+a.wax-fullscreen {
+  color: #ddddd8;
+  background-color: #222220;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  margin: 5px;
   }
 
 a.zoomer {
   text-decoration:none;
   position:absolute;
-  line-height:30px;
+  line-height:25px;
   font-size:20px;
   z-index:99999;
   text-align:center;
-  width:30px;
-  height:30px;
-  top: 20px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  width:25px;
+  height:25px;
   }
   a.zoomin {
-    left:20px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     -moz-border-top-left-radius: 3px;
     -moz-border-bottom-left-radius: 3px;
     }
   a.zoomout {
-    left:50px;
-    border-left: 1px solid #ccc;
+    left:25px;
+    border-left: 1px solid #333;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     -moz-border-top-right-radius: 3px;
@@ -182,8 +190,8 @@ a.zoomer {
 
 .wax-legends {
   position:absolute;
-  right:20px;
-  bottom:20px;
+  right:5px;
+  bottom:5px;
   z-index:999999;
   }
 
@@ -198,8 +206,8 @@ a.zoomer {
   position:absolute;
   padding:10px;
   -webkit-user-select:auto;
-  right:20px;
-  top:20px;
+  right:5px;
+  top:5px;
   max-width:300px;
   opacity:1;
   -webkit-transition:opacity 150ms;
@@ -225,3 +233,31 @@ a.zoomer {
     top:0px;
     right:0px;
     }
+
+a.wax-fullscreen {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 99999;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  content: '';
+  background: #222220 url(sprite.png) -171px -3px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  text-indent: -9999px;
+  }
+  #map.wax-fullscreen-map a.wax-fullscreen {
+    background: #222220 url(sprite.png) -141px -3px;
+    }
+#map.wax-fullscreen-map {
+  position:fixed !important;
+  width:auto !important;
+  height:auto !important;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:999999999999;
+  }
