@@ -20,9 +20,9 @@
   marker-allow-overlap:true;
   marker-fill:@lightgrey;
   [timestamp >= 1330560000] [version = '1'] {
-    [user = 'jumoriana'] { marker-fill: @magenta; }
+    [user = 'BrenoCastroAlves'] { marker-fill: @magenta; }
     [user = 'Rub21'] { marker-fill: @blue;}
+    [user = 'lxbarth'] {marker-fill: @green;}
     [user = 'Geaquinto'] {marker-fill: @yellow;}
-    [user = 'sev hotosm'] {marker-fill: @green;}
   }
 }
