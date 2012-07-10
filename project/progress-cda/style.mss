@@ -1,4 +1,3 @@
-Map { background-image: url(85black.png)}
 
 #countries {
   line-color:#fff;

@@ -144,6 +144,10 @@ em {
       color: #6cadbe;
       }
 
+#map .glass {
+  background-color: rgba(0, 0, 0, 0.9);
+  }
+
 /* --------------------------------------------------------
   Wax, largely taken from theme/controls.css
 --------------------------------------------------------- */

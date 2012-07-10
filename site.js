@@ -12,6 +12,9 @@ window.onload = function() {
     };
 
     wax.tilejson(url, function(tilejson) {
+        var glass = new MM.Layer();
+        glass.draw = function() {};
+        glass.parent.className = 'glass';
         // Set up map.
         var m = new MM.Map('map', [
             new MM.Layer(
@@ -19,11 +22,24 @@ window.onload = function() {
                     'http://tile.openstreetmap.org/{Z}/{X}/{Y}.png'
                 )
             ),
+            glass,
             new wax.mm.connector(tilejson)
         ]);
 
         // Set zoom range and default location.
         m.setZoomRange(tilejson.minzoom, tilejson.maxzoom);
+        // Set extent.
+        // 0: -43.3716 west
+        // 1: -22.966 south
+        // 2: -43.3421 east
+        // 3: -22.9394 north
+        m.setExtent(new MM.Extent(
+            tilejson.bounds[3],
+            tilejson.bounds[0],
+            tilejson.bounds[1],
+            tilejson.bounds[2]), true);
+
+        // Set default location.
         !document.location.hash &&
             m.setCenterZoom(new MM.Location(
                 tilejson.center[1],
