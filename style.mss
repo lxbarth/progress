@@ -1,4 +1,4 @@
-Map { background-color:#000; }
+Map { background-image: url(85black.png)}
 
 #countries {
   line-color:#fff;
@@ -13,16 +13,17 @@ Map { background-color:#000; }
 @yellow: #FF0;
 @orange: #F80;
 @grey: #2d2c2c;
+@lightgrey: #bbb;
 
 #progress {
-  marker-width:1;
+  marker-width:3;
   marker-line-opacity:0;
   marker-allow-overlap:true;
-  marker-fill:@grey;
+  marker-fill:@lightgrey;
   [timestamp >= 1330560000] [version = '1'] {
-    [user = 'pieleric'] { marker-fill: @yellow;} 
-    [user = 'muzito'] { marker-fill: @magenta;} 
+    [user = 'BrenoCastroAlves'] { marker-fill: @magenta; }
     [user = 'Rub21'] { marker-fill: @blue;}
     [user = 'lxbarth'] {marker-fill: @green;}
+    [user = 'Geaquinto'] {marker-fill: @yellow;}
   }
 }
