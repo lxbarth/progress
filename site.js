@@ -13,8 +13,14 @@ window.onload = function() {
 
     wax.tilejson(url, function(tilejson) {
         // Set up map.
-        var m = new MM.Map('map',
-        new wax.mm.connector(tilejson));
+        var m = new MM.Map('map', [
+            new MM.Layer(
+                new MM.TemplatedMapProvider(
+                    'http://tile.openstreetmap.org/{Z}/{X}/{Y}.png'
+                )
+            ),
+            new wax.mm.connector(tilejson)
+        ]);
 
         // Set zoom range and default location.
         m.setZoomRange(tilejson.minzoom, tilejson.maxzoom);
