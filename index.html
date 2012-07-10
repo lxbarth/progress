@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <meta name='apple-mobile-web-app-status-bar-style' content='black' />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <title></title>
+    <link   href='site.css' rel='stylesheet'>
+    <script src='vendor/modestmaps.min.js'></script>
+    <script src='vendor/wax.mm.min.js'></script>
+    <script src='site.js'></script>
+  </head>
+  <body>
+    <div id='header' class='dynamic'>
+      <h1 id='title'>No map at this path</h1>
+      <div id='description'></div>
+    </div>
+    <div id='map' class='dynamic'>
+      <div id='instructions'>
+        <h2>Frame your MapBox map</h2>
+        <ul>
+          <li>
+            1. Click 'Embed' on your map in the MapBox hosting account
+            <div class='example'>
+              The Embed button is the first one on the Info tab of your map.
+            </div>
+          </li>
+          <li>
+            2. Look for the map ID in the TileJSON URL
+            <div class='example'>
+              Example: http://a.tiles.mapbox.com/v3/<em>lxbarth.map-v9o1vc83</em>.jsonp
+            </div>
+          </li>
+          <li>
+            3. Go to http://lxbarth.com/?[map-id]
+            <div class='example'>
+              Example: <a href='http://lxbarth.com/frame?lxbarth.map-v9o1vc83'>http://lxbarth.com/frame?<em>lxbarth.map-v9o1vc83</em></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id='attribution' class='dynamic'></div>
+    <a id='logo' href='http://mapbox.com'></a>
+    </div>
+  </body>
+</html>
