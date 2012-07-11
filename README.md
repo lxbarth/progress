@@ -13,8 +13,10 @@ date that you're interested in.
     curl http://www.overpass-api.de/api/xapi?map?bbox=-74.26,40.49,-73.7,40.92 -o nyc.osm
     python convert.py nyc.osm nyc.geojson 2012-01-01
 
-3) Open TileMill project, update #progress data layer source with the geojson
-file you just created, adjust colors and user names.
+(Required Python 2.7)
+
+3) Make a copy of one of the TileMill projects, update #progress data layer source
+with the geojson file you just created, adjust colors and user names.
 
 4) Render+upload to MapBox hosting
 
