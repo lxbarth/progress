@@ -33,7 +33,7 @@ for n in tree.iterfind('node'):
         conn.request('GET', '/api/0.6/changeset/%s' % n.attrib['changeset'])
         response = conn.getresponse()
         if (response.status != 200):
-            exit('OSM API seems to be down (HTTP response status %s). Try again later.' % response.status)
+            exit('Overpass API seems to be down (HTTP response status %s). Try again later.' % response.status)
         changeset = fromstring(response.read()).iterfind('changeset').next()
         conn.close()
         for t in changeset.iterfind('tag'):
