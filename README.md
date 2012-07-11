@@ -16,6 +16,16 @@ date that you're interested in.
 3) Open TileMill project, update #progress data layer source with the geojson
 file you just created, adjust colors and user names.
 
-4) Render
+4) Render+upload to MapBox hosting
 
-5) Go to lxbarth.com/progress?[layerid]
+5) Go to lxbarth.com/progress?[map id]
+
+## How do I find the the map id?
+
+### Click 'embed' on your map in the MapBox hosting account
+
+![](https://dl.dropbox.com/u/479174/hosting/frame/embed.png)
+
+### Now look for the map ID in the TileJSON URL
+
+![](https://dl.dropbox.com/u/479174/hosting/frame/tiljson.png)
